@@ -30,8 +30,21 @@ function getComputerChoice() {
     }
 }
 
-for(let i=0; i<20; i++){
-    console.log(getComputerChoice());
+// for(let i=0; i<20; i++){
+//     console.log(getComputerChoice());
+// }
+
+
+//a function to return human choice.
+function getHumanChoice(){
+    let choice = prompt('Enter your choice:').toLocaleLowerCase();
+    while(choice!=="rock" && choice!=="paper" && choice!=="scissors"){
+        console.log('try again.')
+        choice = prompt("Enter 'rock','paper' or 'scissors' as a choice:");
+    }
+    return choice;
+    
+
 }
 
 
